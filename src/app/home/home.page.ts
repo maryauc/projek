@@ -30,13 +30,6 @@ export class HomePage implements OnInit {
     this.authService.logout(); // lempar ke authService lalu cari fungsi logout
     this.router.navigateByUrl('/', { replaceUrl: true }); // alihkan ke halaman
   }
-  pindahdiary() {
-    this.router.navigateByUrl('/diary');
-  }
-
-  pindahbookmark() {
-    this.router.navigateByUrl('/bookmark');
-  }
 
   pindahnote() {
     this.router.navigateByUrl('/note');

@@ -3,53 +3,39 @@
     <div class="header">
       <ion-item class="header" lines="none">
         <ion-img slot="start" src="/assets/image/logo.png"></ion-img>
-        <ion-icon (click)="logout()" slot="end" ios="exit-outline"></ion-icon>
+        <ion-img (click)="logout()" slot="end" src="/assets/image/logout.png"></ion-img>
+
+        <!-- <ion-icon (click)="logout()" slot="end" ios="exit-outline" color="danger"></ion-icon> -->
       </ion-item>
     </div>
     <div class="hallo">
       <ion-item>
         <ion-label>
-          <strong class="hallo">Hallo,&nbsp;</strong>
+          <strong class="hallo">Hi,&nbsp;</strong>
           <strong class="user">{{ nama }}!</strong>
           <p>{{today | date}}</p>
         </ion-label>
       </ion-item>
     </div>
-    <div class="menu">
-      <ion-item lines="none" (click)="pindahdiary()">
-        <ion-thumbnail slot="start">
-          <img src="/assets/image/diary.png" />
-        </ion-thumbnail>
-        <ion-label>
-          <h1>Diary</h1>
-          <p>Ceritakanlah pengalamanmu!</p>
-        </ion-label>
-      </ion-item>
-      <ion-item lines="none" (click)="pindahbookmark()">
-        <ion-thumbnail slot="start">
-          <img src="/assets/image/bookmark.png" />
-        </ion-thumbnail>
-        <ion-label>
-          <h1>Bookmark</h1>
-          <p>Simpanlah referensimu!</p>
-        </ion-label>
-      </ion-item>
+    <div class="menu1">
       <ion-item lines="none" (click)="pindahnote()">
         <ion-thumbnail slot="start">
           <img src="/assets/image/note.png" />
         </ion-thumbnail>
         <ion-label>
-          <h1>Note</h1>
-          <p>Catatlah pengetahuanmu!</p>
+          <h1>Catatan</h1>
+          <p>Tulis Catatanmu di Sini</p>
         </ion-label>
       </ion-item>
+    </div>
+    <div class="menu2">
       <ion-item lines="none" (click)="pindahtask()">
         <ion-thumbnail slot="start">
-          <img src="/assets/image/task.png" />
+          <img src="/assets/image/task.png" width="1"/>
         </ion-thumbnail>
         <ion-label>
-          <h1>Task</h1>
-          <p>Aturlah kegiatanmu!</p>
+          <h1>Tugas</h1>
+          <p>Kelola Tugasmu di Sini</p>
         </ion-label>
       </ion-item>
     </div>

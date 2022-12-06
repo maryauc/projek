@@ -21,58 +21,6 @@ const routes: Routes = [
     canLoad: [AutoLoginGuard],
   },
   {
-    path: 'diary',
-    loadChildren: () =>
-      import('./diary/diary.module').then((m) => m.DiaryPageModule),
-  },
-  {
-    path: 'diary-tambah',
-    loadChildren: () =>
-      import('./diary-tambah/diary-tambah.module').then(
-        (m) => m.DiaryTambahPageModule
-      ),
-  },
-  {
-    path: 'diary-lihat/:id',
-    loadChildren: () =>
-      import('./diary-lihat/diary-lihat.module').then(
-        (m) => m.DiaryLihatPageModule
-      ),
-  },
-  {
-    path: 'diary-edit/:id',
-    loadChildren: () =>
-      import('./diary-edit/diary-edit.module').then(
-        (m) => m.DiaryEditPageModule
-      ),
-  },
-  {
-    path: 'bookmark',
-    loadChildren: () =>
-      import('./bookmark/bookmark.module').then((m) => m.BookmarkPageModule),
-  },
-  {
-    path: 'bookmark-edit/:id',
-    loadChildren: () =>
-      import('./bookmark-edit/bookmark-edit.module').then(
-        (m) => m.BookmarkEditPageModule
-      ),
-  },
-  {
-    path: 'bookmark-lihat/:id',
-    loadChildren: () =>
-      import('./bookmark-lihat/bookmark-lihat.module').then(
-        (m) => m.BookmarkLihatPageModule
-      ),
-  },
-  {
-    path: 'bookmark-tambah',
-    loadChildren: () =>
-      import('./bookmark-tambah/bookmark-tambah.module').then(
-        (m) => m.BookmarkTambahPageModule
-      ),
-  },
-  {
     path: 'note',
     loadChildren: () =>
       import('./note/note.module').then((m) => m.NotePageModule),

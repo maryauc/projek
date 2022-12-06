@@ -1,9 +1,9 @@
 ion-content {
-  --background: url("/assets/image/diary.jpg") no-repeat center center / cover;
-
+  --background: #FFFFFF;
   .header {
     padding: 10px 1px;
     --background: none;
+    color: black;
 
     ion-label {
       font-size: 30pt;
@@ -17,10 +17,7 @@ ion-content {
       margin-bottom: 10px;
 
       ion-item {
-        --background: rgba(255, 232, 210, 0.5);
-        --box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25);
-        backdrop-filter: blur(10px);
-        /* Note: backdrop-filter has minimal browser support */
+        --background: #A8E6CE;
 
         --border-radius: 15px;
         --min-height: 100px;
@@ -46,7 +43,7 @@ ion-content {
     ion-button {
       align-items: center;
       --min-height: 40px;
-      --background: #f2ba82;
+      --background: #A8E6CE;
       --border-radius: 20px;
     }
   }

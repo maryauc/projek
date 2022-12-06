@@ -28,12 +28,7 @@ ion-content {
         padding: 15px 15px;
         margin-bottom: 10px;
         --min-height: 120px;
-        --background: linear-gradient(
-            0deg,
-            rgba(255, 255, 255, 0.1),
-            rgba(255, 255, 255, 0.1)
-          ),
-          url("/assets/image/home-header.jpg") no-repeat center center / cover;
+        --background: #FFAAA6;
         --border-radius: 15px;
         font-weight: 700;
         font-size: 30px;
@@ -42,26 +37,22 @@ ion-content {
         }
 
         strong.user {
-          color: #f6b21b;
+          color: #DCEDC2;
         }
 
         p {
           padding-top: 5px;
           font-size: 10pt;
-          color: black;
+          color: #363636;
         }
       }
     }
 
-    .menu {
+    .menu1 {
       ion-item {
         margin: 15px 15px;
         --min-height: 100px;
-        --background: linear-gradient(
-          96.16deg,
-          rgba(255, 232, 210, 0.5) 0.97%,
-          rgba(107, 58, 13, 0.5) 98.97%
-        );
+        --background: #A8E6CE;
         box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25);
         backdrop-filter: blur(5px);
         /* Note: backdrop-filter has minimal browser support */
@@ -73,7 +64,28 @@ ion-content {
         }
 
         p {
-          color: #ffffff;
+          color: #363636;
+        }
+      }
+    }
+
+    .menu2 {
+      ion-item {
+        margin: 15px 15px;
+        --min-height: 100px;
+        --background: #DCEDC2;
+        box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(5px);
+        /* Note: backdrop-filter has minimal browser support */
+
+        border-radius: 15px;
+
+        h1 {
+          color: #4e2f00;
+        }
+
+        p {
+          color: #363636;
         }
       }
     }

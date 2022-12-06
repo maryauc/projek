@@ -6,7 +6,7 @@
           <ion-back-button defaultHref="home"></ion-back-button>
         </ion-buttons>
         <ion-label>
-          <strong>NOTE</strong>
+          <strong>CATATAN</strong>
         </ion-label>
       </ion-item>
 
@@ -18,9 +18,9 @@
             <p>{{ data_value.tanggal }}</p>
             <h1>{{ data_value.judul }}</h1>
           </ion-label>
-          <ion-icon color="primary" slot="end" [routerLink]="['/note-lihat/',data_value.id]"
+          <ion-icon color="medium" slot="end" [routerLink]="['/note-lihat/',data_value.id]"
             routerLinkActive="router-link-active" name="eye-outline"></ion-icon>
-          <ion-icon color="success" slot="end" [routerLink]="['/note-edit/',data_value.id]"
+          <ion-icon color="primary" slot="end" [routerLink]="['/note-edit/',data_value.id]"
             routerLinkActive="router-link-active" name="create-outline"></ion-icon>
           <ion-icon color="danger" slot="end" (click)="deleteDataNote(data_value.id)" name="trash-outline">
           </ion-icon>
@@ -31,7 +31,7 @@
   <div class="tambah">
     <ion-button slot="fixed" type="button" [routerLink]="['/note-tambah']" routerLinkActive="router-link-active">
       <ion-icon slot="start" name="add-outline"></ion-icon>
-      ADD NOTE
+      Tambah
     </ion-button>
   </div>
 

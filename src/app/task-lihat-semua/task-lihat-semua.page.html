@@ -6,7 +6,7 @@
           <ion-back-button defaultHref="home"></ion-back-button>
         </ion-buttons>
         <ion-label>
-          <strong>All Task</strong>
+          <strong>Semua Tugas</strong>
         </ion-label>
       </ion-item>
     </div>
@@ -17,9 +17,9 @@
             <p>{{ data_value.tanggal }}</p>
             <h1>{{ data_value.judul }}</h1>
           </ion-label>
-          <ion-icon color="primary" slot="end" [routerLink]="['/task-lihat/',data_value.id]"
+          <ion-icon color="medium" slot="end" [routerLink]="['/task-lihat/',data_value.id]"
             routerLinkActive="router-link-active" name="eye-outline"></ion-icon>
-          <ion-icon color="success" slot="end" [routerLink]="['/task-edit/',data_value.id]"
+          <ion-icon color="primary" slot="end" [routerLink]="['/task-edit/',data_value.id]"
             routerLinkActive="router-link-active" name="create-outline"></ion-icon>
           <ion-icon color="danger" slot="end" (click)="deleteDataTask(data_value.id)" name="trash-outline">
           </ion-icon>

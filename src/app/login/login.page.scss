@@ -1,6 +1,5 @@
 ion-content {
-  --background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
-    url("/assets/image/bg.jpg") no-repeat center center / cover;
+  --background: #FFAAA6;
 
   .wrapper {
     position: absolute;
@@ -20,7 +19,7 @@ ion-content {
       }
 
       ion-item {
-        --background: rgba(242, 186, 130, 0.2);
+        --background: rgba(254, 206, 171, 0.2);
         --border-radius: 20px;
         --padding-start: 10px;
         --min-height: 40px;
@@ -44,7 +43,7 @@ ion-content {
         left: 118px;
         top: 467px;
         margin-top: 40px;
-        --background: #f2ba82;
+        --background: #FFAAA6;
         --border-radius: 20px;
       }
 
@@ -53,7 +52,7 @@ ion-content {
         color: black;
         text-align: center;
         a {
-          color: #f2ba82;
+          color: #FFAAA62;
         }
       }
     }
